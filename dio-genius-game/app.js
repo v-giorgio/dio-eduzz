@@ -42,7 +42,6 @@ let lightColor = (element, number) => {
 let checkOrder = () => {
     for(let i in clickedOrder){
         if(clickedOrder[i] != order[i]){
-            document.getElementById('score-number').innerHTML = 0;
             lose();
             break;
         }
@@ -94,6 +93,7 @@ let playGame = () => {
     order = [];
     clickedOrder = [];
     score = 0;
+    document.getElementById('score-number').innerHTML = 0;
     nextLevel();
 }
 
