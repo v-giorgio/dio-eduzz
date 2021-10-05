@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Genius</title>
+</head>
+<body>
+    <div class="nav">
+        <div onclick="loadSelf()" class="logo">
+            GENIUS demo
+        </div>
+        <div class="navbar">
+            <ul>
+                <li onclick="openPurchase()">Buy it</li>
+            </ul>
+        </div>
+    </div>
+    <div id="score">
+        <span>Score: </span>
+        <span id="score-number">0</span>
+        <button onclick="playGame()">Restart</button>
+    </div>
+    <div class="result"></div>
+    <div class="main-game">
+        <div class="genius">
+            <div class="blue"></div>
+            <div class="yellow"></div>
+            <div class="red"></div>
+            <div class="green"></div>
+        </div>
+    </div>
+    <footer>
+        Dio-Genius by <b>Vitor</b> - 2021
+    </footer>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

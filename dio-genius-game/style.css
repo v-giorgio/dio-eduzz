@@ -1,0 +1,186 @@
+body{
+    margin: 0;
+    background-color:rgb(51, 50, 48);
+}
+
+.nav{
+    display: flex;
+    height: 80px;
+    position:static;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 40px;
+    background-color:yellow;
+    text-transform: uppercase;
+    border-bottom: 10px groove gray;
+}
+
+.logo{
+    display: flex;
+    position: absolute;
+    font-size: 30px;
+    left: 0;
+    letter-spacing: 4px;
+    margin: 0 1em;
+    align-self: center;
+}
+
+.logo:hover{
+    color: gray;
+    cursor: pointer;
+    font-size: 32px;
+}
+
+.navbar{
+    display: flex;
+    position: absolute;
+    font-size: 20px;
+    right: 0;
+    margin: 0 1em;
+    align-self: center;
+}
+
+ul{
+    list-style: none;
+    letter-spacing: 2px;
+}
+
+li{
+    float: left;
+    margin: 0 10px;
+}
+
+li:hover{
+    font-size: 22px;
+    cursor: pointer;
+    color: slategray;
+}
+
+#score{
+    height: 25px;
+    position:static;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+button{
+    margin-left: 100px;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    background-color: rgb(48, 44, 44);
+    border: 2px dashed;
+}
+
+button:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.main-game{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.genius{
+    display: grid;
+    grid-template-areas: 'green red' 'yellow blue';
+    grid-gap: 10px;
+    border: 1px solid #ffff;
+    background-color: beige;
+    border-radius: 40%;
+    width: 650px;
+    height: 650px;
+    border: 3px solid beige;
+}
+
+.blue{
+    grid-area: blue;
+    background-color: rgb(30, 196, 196);
+    border-bottom-right-radius: 80%;
+}
+.red{
+    grid-area: red;
+    background-color: rgb(211, 29, 29);
+    border-top-right-radius: 80%;
+}
+.yellow{
+    grid-area: yellow;
+    background-color: rgb(238, 225, 40);
+    border-bottom-left-radius: 80%;
+}
+.green{
+    grid-area: green;
+    background-color: rgb(80, 187, 30);
+    border-top-left-radius: 80%;
+}
+
+.blue:hover{
+    cursor: grab;
+}
+
+.red:hover{
+    cursor: grab;
+}
+
+.yellow:hover{
+    cursor: grab;
+}
+
+.green:hover{
+    cursor: grab;
+}
+
+.pushed{
+    opacity: 0.4;
+}
+
+footer{
+    position: static;
+    height: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:yellow;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 40px;
+    border-top: 10px groove gray;
+}
+
+/* MEDIA QUERIES */
+
+/* Medium devices */
+@media only screen and (max-width: 860px) {
+    .genius{
+        width: 600px;
+        height: 600px;
+    }
+}
+
+/* Small devices */
+@media only screen and (max-width: 620px) {
+    .genius{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+/* Extra Small devices */
+@media only screen and (max-width: 420px) {
+    .genius{
+        width: 250px;
+        height: 250px;
+    }
+}
